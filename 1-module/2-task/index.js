@@ -8,9 +8,12 @@ function print(text) {
 /**
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
- */
+ **/
 function isValid(name) {
   // ваш код...
+  return Boolean(name) && 
+    name.indexOf(' ') == -1 && 
+    name.length >= 4
 }
 
 function sayHello() {
